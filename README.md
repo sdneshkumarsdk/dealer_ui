@@ -1,0 +1,49 @@
+# Sonalika Dealer & HQ Portal - Frontend
+
+The modern, premium frontend application for the **Sonalika Tractor Dealer & Headquarters Management Portal**, built using Vue 3 and Vite.
+
+---
+
+## 🛠️ Tech Stack
+
+* **Framework**: [Vue 3](https://vuejs.org/) (Composition API with `<script setup>`)
+* **Routing**: [Vue Router 4](https://router.vuejs.org/) (with dynamic layout switching and role-based route guards)
+* **Styling**: Vanilla CSS (Harmony themes with vibrant light/dark modes, dashboard card transitions)
+* **Build System**: [Vite](https://vite.dev/)
+* **HTTP Client**: [Axios](https://github.com/axios/axios)
+
+---
+
+## 🚀 Getting Started
+
+### 1. Prerequisites
+Ensure you have [Node.js](https://nodejs.org/) installed (v18+ recommended).
+
+### 2. Installation
+Install all dependencies using npm:
+```bash
+npm install
+```
+
+### 3. Running Development Server
+Start the local server with hot-module replacement (HMR):
+```bash
+npm run dev
+```
+Open `http://localhost:5173` in your browser.
+
+### 4. Build for Production
+Verify and compile optimized production assets:
+```bash
+npm run build
+```
+
+---
+
+## 📂 Project Structure
+
+* `src/components/layout/`: Global layout components (`Sidebar.vue`, `Topbar.vue`, `Login.vue`).
+* `src/components/dealer/`: Subpages and dashboards specific to the Dealer role.
+* `src/components/admin/`: Configuration, user management (`UserManagement.vue`), and network subpages for the Admin role.
+* `src/router/index.js`: Vue Router configuration with meta layouts and path protection guards.
+* `src/App.vue`: Main entrance layout directing authenticated subpages and dynamic state bindings.
